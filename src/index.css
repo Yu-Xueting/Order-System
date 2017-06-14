@@ -48,7 +48,8 @@ body {
 }
 
 .addNewPane {
-    width: 30em;
+    flex: 1;
+    max-width: 30em;
     margin: 1em;
     padding: 1em;
 }
