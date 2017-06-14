@@ -1,0 +1,97 @@
+{
+    "product_categories": [
+        {
+            "product_category_id": 1,
+            "product_category_name": "Chocolate Beverage",
+            "price": 15,
+            "next_product_categories": [
+                {
+                    "product_category_id": 2,
+                    "product_category_name": "Hot Chocolate",
+                    "price": 10
+                },
+                {
+                    "product_category_id": 3,
+                    "product_category_name": "Peppermint Hot Chocolate",
+                    "price": 11
+                },
+                {
+                    "product_category_id": 4,
+                    "product_category_name": "Salted Caramel Hot Chocolate",
+                    "price": 12
+                },
+                {
+                    "product_category_id": 5,
+                    "product_category_name": "White Hot Chocolate",
+                    "price": 13
+                }
+            ]
+        },
+        {
+            "product_category_id": 6,
+            "product_category_name": "Espresso Beverage",
+            "price": 21,
+            "next_product_categories": [
+                {
+                    "product_category_id": 7,
+                    "product_category_name": "Caffe Americano",
+                    "price": 22
+                },
+                {
+                    "product_category_id": 8,
+                    "product_category_name": "Caffe Latte",
+                    "price": 23
+                },
+                {
+                    "product_category_id": 9,
+                    "product_category_name": "Caffe Mocha",
+                    "price": 24
+                },
+                {
+                    "product_category_id": 10,
+                    "product_category_name": "Cappuccino",
+                    "price": 25
+                },
+                {
+                    "product_category_id": 11,
+                    "product_category_name": "Pumpkin Spice Latte",
+                    "price": 26
+                }
+            ]
+        },
+        {
+            "product_category_id": 12,
+            "product_category_name": "Frappuccino",
+            "price": 31,
+            "next_product_categories": [
+                {
+                    "product_category_id": 13,
+                    "product_category_name": "Caffe Vanilla Frappuccino",
+                    "price": 32,
+                    "next_product_categories": [
+                        {
+                            "product_category_id": 14,
+                            "product_category_name": "450 calories",
+                            "price": 33
+                        },
+                        {
+                            "product_category_id": 15,
+                            "product_category_name": "16g fat",
+                            "price": 34
+                        },
+                        {
+                            "product_category_id": 16,
+                            "product_category_name": "13g protein",
+                            "price": 35
+                        }
+                    ]
+                },
+                {
+                    "product_category_id": 17,
+                    "product_category_name": "Caffe Vanilla Frappuccino Light",
+                    "price": 36
+                }
+            ]
+        }
+    ]
+}

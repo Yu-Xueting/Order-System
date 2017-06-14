@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainPage {
+    display: flex;
+    flex-direction: row;
+}
+
+.categoryPane {
+    width: max-content;
+    color: rgb(128, 128, 128);
+    border-right: 2px solid darkgray;
+}
+
+.categoryPane ul {
+    list-style-type: none;
+    margin: .5em 0 .5em 1em;
+    padding: 0;
+}
+
+.categoryPane .categoryName:hover {
+    color: orange;
+    cursor: default;
+}
+
+.productCategory {
+    margin: 1em;
+}
+
+.categoryNameWithChildren {
+    position: relative;
+    font-weight: bold;
+}
+
+.categoryNameWithChildren:before {
+    content: "-";
+    font-weight: bold;
+    color: green;
+    margin-right: 5px;
+    height: 10px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+}
+
+.addNewPane {
+    width: 30em;
+    margin: 1em;
+    padding: 1em;
+}
+
+.addNewTool {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.addNewButton {
+    height: min-content;
+    background-color: rgb(255, 133, 0);
+    border: none;
+    color: white;
+    padding: .6em .8em;
+    box-shadow: 1px 1px 4px #dadada;
+    border-radius: 3px;
+}
+
+.newProductInfoPane {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    border-top: 2px solid darkgrey;
+}
+
+.newProductInfoPane .productInfoRow {
+    display: flex;
+    margin-top: 1em;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.newProductInfoPane .saveOrDismiss {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.newProductInfoPane .saveOrDismiss button {
+    width: min-content;
+    margin: 2em 0 0 2em;
+    border: none;
+    padding: .5em 1em;
+}
+
+.saveResultButton {
+    background-color: rgb(255, 133, 0);
+    color: white;
+    box-shadow: 1px 1px 4px #dadada;
+    border-radius: 3px;
+}
+
+.dismissChangeButton {
+    background: none;
+    color: grey;
+}
+
+.savedProductInfo {
+    margin: .5em 0;
+}
