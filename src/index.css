@@ -6,11 +6,18 @@ body {
 }
 
 .mainPage {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 .categoryPane {
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     color: rgb(128, 128, 128);
     border-right: 2px solid darkgray;
@@ -48,48 +55,78 @@ body {
 }
 
 .addNewPane {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     max-width: 30em;
     margin: 1em;
     padding: 1em;
 }
 
 .addNewTool {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 
 .addNewButton {
+    height: -webkit-min-content;
+    height: -moz-min-content;
     height: min-content;
     background-color: rgb(255, 133, 0);
     border: none;
     color: white;
     padding: .6em .8em;
-    box-shadow: 1px 1px 4px #dadada;
+    -webkit-box-shadow: 1px 1px 4px #dadada;
+            box-shadow: 1px 1px 4px #dadada;
     border-radius: 3px;
 }
 
 .newProductInfoPane {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 2em;
     border-top: 2px solid darkgrey;
 }
 
 .newProductInfoPane .productInfoRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 1em;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .newProductInfoPane .saveOrDismiss {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 
 .newProductInfoPane .saveOrDismiss button {
+    width: -webkit-min-content;
+    width: -moz-min-content;
     width: min-content;
     margin: 2em 0 0 2em;
     border: none;
@@ -99,7 +136,8 @@ body {
 .saveResultButton {
     background-color: rgb(255, 133, 0);
     color: white;
-    box-shadow: 1px 1px 4px #dadada;
+    -webkit-box-shadow: 1px 1px 4px #dadada;
+            box-shadow: 1px 1px 4px #dadada;
     border-radius: 3px;
 }
 
