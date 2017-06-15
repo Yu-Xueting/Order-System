@@ -11,18 +11,25 @@ This order system is being developed using React. It provides the basic interact
 The tree menu on the left pane is a reusable component, which converts the JSON data into the tree structure. The expected JSON format is
 ```
 {
-    "product_categories": [
+  "product_categories": [
+    {
+      "product_category_id": 1,
+      "product_category_name": "Chocolate Beverage",
+      "price": 15,
+      "next_product_categories": [
         {
-            "product_category_id": 1,
-            "product_category_name": "Chocolate Beverage",
-            "price": 15,
-            "next_product_categories": [
-                {
-                    "product_category_id": 2,
-                    "product_category_name": "Hot Chocolate",
-                    "price": 10
-                },
+          "product_category_id": 2,
+          "product_category_name": "Hot Chocolate",
+          "price": 10
+        },
+        
+        //...
+}
 ```
 
-### Ability to add new product
+### Common workflow
+* Click on the button "Add New Product" ==> The corresponding form shows below, the customer ID updates automaticaly
 
+* Select the expected product on the left pane ==> The product name and price get updated in the form
+
+* Click on the save button ==> The product information is printed on the top. If the optional customer name was assigned, it displays next to the customer Id. 
