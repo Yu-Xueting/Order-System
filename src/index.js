@@ -1,9 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ClassNames from 'classnames';
 import data from './data.json';
 import './index.css';
 
 class TreeView extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            isVisible: true
+        };
+        this.toggleChildren = this.toggleChildren.bind(this);
+    }
+
+    toggleChildren() {
+        this.setState({isVisible: !this.state.isVisible});
+    }
+
     render() {
         var childrenNodes;
         const currentNode = this.props.nodes;
@@ -21,13 +34,21 @@ class TreeView extends React.Component {
 
         // Only render the unordered list when the children nodes are not empty
         const hasChildrenNodes = childrenNodes && childrenNodes.length > 0;
-        const childrenNodesList = hasChildrenNodes ? <ul>{childrenNodes}</ul> : null;
+        const childrenNodesList = hasChildrenNodes ? <ul className="childrenNodes">{childrenNodes}</ul> : null;
+        const categoryClass = ClassNames({
+            "categoryName": true,
+            "togglable": hasChildrenNodes,
+            "expandChildren": this.state.isVisible,
+            "collapseChildren": !this.state.isVisible
+        });
         return (
             <div>
-                <div
-                    className={"categoryName categoryName" + (hasChildrenNodes ? "With" : "Without") + "Children"}
+                <div className={categoryClass}
                     onClick={() => {
-                        onClickFcn(currentNode);
+                        if (!hasChildrenNodes) {
+                            onClickFcn(currentNode);
+                        }
+                        this.toggleChildren();
                     }}
                 >
                     {currentNode.product_category_name}
