@@ -38,20 +38,30 @@ body {
     margin: 1em;
 }
 
-.categoryNameWithChildren {
+.categoryName.togglable {
     position: relative;
     font-weight: bold;
 }
 
-.categoryNameWithChildren:before {
-    content: "-";
+.categoryName.togglable:before {
     font-weight: bold;
     color: green;
-    margin-right: 5px;
-    height: 10px;
     position: absolute;
     left: -10px;
-    top: 0;
+}
+
+/* Children nodes are hidden */
+.categoryName.togglable.collapseChildren + .childrenNodes {
+    display: none;
+}
+
+.categoryName.togglable.collapseChildren:before {
+    content: "+";
+}
+
+/* Children nodes are visible */
+.categoryName.togglable.expandChildren:before {
+    content: "-";
 }
 
 .addNewPane {
