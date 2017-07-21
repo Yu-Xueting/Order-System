@@ -32,4 +32,4 @@ The tree menu on the left pane is a reusable component, which converts the JSON 
 
 * Select the expected product on the left pane ==> The product name and price get updated in the form
 
-* Click on the save button ==> The product information is printed on the top. If the optional customer name was assigned, it displays next to the customer Id.  
+* Click on the save button ==> The product information is printed on the top. If the optional customer name was assigned, it displays next to the customer Id
